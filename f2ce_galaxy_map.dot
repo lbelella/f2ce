@@ -6,6 +6,7 @@ digraph GALAXY {
 	dir = both;
 	rankdir = LR;
 	sep = .10;
+	colorscheme = rdylbu3;
 	
 	//K = 3.0;
 	//edge [len=0.9];
@@ -52,6 +53,7 @@ digraph GALAXY {
 	d -> {q r s t u v}
 	*/
 
+	node [color=black, fillcolor="/rdylbu3/3", style=filled];
 	bfmc [label="Bfmc"];
 	bikes [label="Bikes"];
 	flight [label="Flight"];
@@ -125,6 +127,7 @@ digraph GALAXY {
 	waveform -> sidh [dir="both"];
 
 	// Bfmc systems
+	node [color=black, fillcolor="/rdylbu3/1", style=filled];
 	bfmc -> { Bikers; Pub; Radio; Strat; Force; Nor; Whiskey; }
 	
 	// Flight systems
@@ -133,10 +136,19 @@ digraph GALAXY {
 	// Jukebox systems
 	jukebox -> { Hof; Volleyball; Crouton; Tinkle; }
 	
+	// Jukebox system planets
+	node [color=black, fillcolor="/rdylbu3/2", style=filled];
+	Hof -> { "Cosa Nostra"; Maminar; Vantek; }
+	Volleyball -> { Molten; Wilson; Zeerox; }
+	Crouton -> { Caesar; }
+	Tinkle -> { Lush; Springs; Starbase; }
+	
 	// Meadows systems
+	node [color=black, fillcolor="/rdylbu3/1", style=filled];
 	meadows -> { Villain; Escape; Seer; Disco; Alient; Sting; Punctual; Effvee; Danville; Redpill; Number; }	      
 	
 	// Meadows system planets
+	node [color=black, fillcolor="/rdylbu3/2", style=filled];
 	Villain -> { Gaston; Scar; Ursula; }
 	Escape -> { Vault; }
 	Seer -> { Satra; }
@@ -150,9 +162,11 @@ digraph GALAXY {
 	Number -> { One; }
 	
 	// Null systems
+	node [color=black, fillcolor="/rdylbu3/1", style=filled];
 	null -> { Types; Metric; Underdark; Rage; Hope; Despair; Ombey; Carib; Travel; Prefix; Politics; Abstract; Mud; }
 
 	// Null system planets
+	node [color=black, fillcolor="/rdylbu3/2", style=filled];
 	Types -> Boolean; 
 	Types -> Integer; 
 	Types -> String;
@@ -170,6 +184,7 @@ digraph GALAXY {
 	Mud -> { Asteria }
 	
 	// Sidh systems
+	node [color=black, fillcolor="/rdylbu3/1", style=filled];
 	sidh -> { Picts; Rionnag; Acorn; }
 	
 	// Sol systems
