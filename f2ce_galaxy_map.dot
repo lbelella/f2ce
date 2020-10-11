@@ -1,214 +1,92 @@
 digraph GALAXY {
 	edge [arrowhead=none,arrowtail=none];
-	splines = true;	
+	splines = true;
 	concentrate = true;
 	overlap = false;
 	dir = both;
 	rankdir = LR;
 	sep = .10;
 	colorscheme = rdylbu3;
-	
-	//K = 3.0;
-	//edge [len=0.9];
-	//graph [rankdir = LR, sep = .12, ];
-	
-	//mindist = .3;
-	// K (sfdp 0.3, fdp 0.3)
-	// edge [len] (neato 1.0, fdp 0.3)
-	// edge [minlen] (dot, 1.0)
-	//ranksep = 1.0;
-	// edge [weight]
-	//nodesep = 0.25;
-	// size="7.75,10.25"
-	//fontsize = 2;
-	// dot, neato, twopi, circo, fdp, sfdp
-	
-	// http://www.graphviz.org/doc/info/attrs.html#d:overlap
-	
-	// Subset model:
-	// http://www.graphviz.org/doc/info/attrs.html#d:model
-	
-	// https://rich-iannone.github.io/DiagrammeR/graphviz_and_mermaid.html
-	/*
-	graph [layout = dot,
-       rankdir = LR]
 
-	node [shape = circle,
-		  style = filled,
-		  color = grey,
-		  label = '']
+	isl [label="Interstellar\nSpace",color=black,fillcolor=black,fontcolor=white,style=filled,shape=circle];
 
-	node [fillcolor = red]
-	a
+	node [color=black,fillcolor="/rdylbu3/3",fontcolor=black,style=filled,shape=invhouse];
+	isl -> { "Waveform"; "Meadows"; "Bfmc"; "Flight"; "Sidh"; "Bikes"; "Sol"; "Pacifica"; "Jukebox"; "Null"; }
 
-	node [fillcolor = green]
-	b c d
+	node [color=black, fillcolor="/rdylbu3/1", style=filled, shape=box];
+	Waveform -> { "Easy"; }
+	Meadows -> { "Villain"; "Escape"; "Seer"; "Disco"; "Alient"; "Sting"; "Punctual"; "Effvee"; "Danville"; "Redpill"; "Number"; }
+	Bfmc -> { "Bikers"; "Pub"; "Radio"; "Strat"; "Force"; "Nor"; "Whiskey"; }
+	Flight -> { "Gov"; "Fight"; "Enso"; "The Star Galaxy"; "Wyld"; "Rihansu"; "Trial"; "Mythic"; "Abyss"; "Roman Empire"; "Outpost"; "Flowers"; }
+	Sidh -> { "Picts"; "Rionnag"; "Acorn"; }
+	Bikes -> { }
+	Sol -> { "Vee"; "Wow"; }
+	Pacifica -> { }
+	Jukebox -> { "Hof"; "Volleyball"; "Crouton"; "Tinkle"; }
+	Null -> { "Types"; "Metric"; "Underdark"; "Rage"; "Hope"; "Despair"; "Ombey"; "Carib"; "Travel"; "Prefix"; "Politics"; "Abstract"; "Mud"; }
 
-	node [fillcolor = orange]
-
-	edge [color = grey]
-	a -> {b c d}
-	b -> {e f g h i j}
-	c -> {k l m n o p}
-	d -> {q r s t u v}
-	*/
-
-	node [color=black, fillcolor="/rdylbu3/3", style=filled];
-	bfmc [label="Bfmc"];
-	bikes [label="Bikes"];
-	flight [label="Flight"];
-	jukebox [label="Jukebox"];
-	meadows [label="Meadows"];
-	null [label="Null"];
-	pacifica [label="Pacifica"];
-	sidh [label="Sidh"];
-	sol [label="Sol"];
-	waveform [label="Waveform"];		
-	
-	bfmc -> sol [dir="both"];
-	bikes -> sol [dir="both"];
-	flight -> sol [dir="both"];
-	jukebox -> sol [dir="both"];
-	meadows -> sol [dir="both"];
-	null -> sol [dir="both"];
-	pacifica -> sol [dir="both"];
-	sidh -> sol [dir="both"];
-	waveform -> sol [dir="both"];
-	
-	bikes -> bfmc [dir="both"];
-	flight -> bfmc [dir="both"];
-	jukebox -> bfmc [dir="both"];
-	meadows -> bfmc [dir="both"];
-	null -> bfmc [dir="both"];
-	pacifica -> bfmc [dir="both"];
-	sidh -> bfmc [dir="both"];
-	waveform -> bfmc [dir="both"];
-	
-	flight -> bikes [dir="both"];
-	jukebox -> bikes [dir="both"];
-	meadows -> bikes [dir="both"];
-	null -> bikes [dir="both"];
-	pacifica -> bikes [dir="both"];
-	sidh -> bikes [dir="both"];
-	sol -> bikes [dir="both"];
-	waveform -> bikes [dir="both"];
-	
-	jukebox -> flight [dir="both"];
-	meadows -> flight [dir="both"];
-	null -> flight [dir="both"];
-	pacifica -> flight [dir="both"];
-	sidh -> flight [dir="both"];
-	sol -> flight [dir="both"];
-	waveform -> flight [dir="both"];
-	
-	meadows -> jukebox [dir="both"];
-	null -> jukebox [dir="both"];
-	pacifica -> jukebox [dir="both"];
-	sidh -> jukebox [dir="both"];
-	sol -> jukebox [dir="both"];
-	waveform -> jukebox [dir="both"];
-	
-	null -> meadows [dir="both"];
-	pacifica -> meadows [dir="both"];
-	sidh -> meadows [dir="both"];
-	sol -> meadows [dir="both"];
-	waveform -> meadows [dir="both"];
-	
-	pacifica -> null [dir="both"];
-	sidh -> null [dir="both"];
-	sol -> null [dir="both"];
-	waveform -> null [dir="both"];
-	
-	sidh -> pacifica [dir="both"];
-	sol -> pacifica [dir="both"];
-	waveform -> pacifica [dir="both"];
-
-	sol -> sidh [dir="both"];
-	waveform -> sidh [dir="both"];
-
-	// Bfmc systems
-	node [color=black, fillcolor="/rdylbu3/1", style=filled];
-	bfmc -> { Bikers; Pub; Radio; Strat; Force; Nor; Whiskey; }
-	
-	// Flight systems
-	flight -> { Gov; Fight; Enso; "The Star Galaxy"; Wyld; Rihansu; Trial; Mythic; Abyss; "Roman Empire"; Output; Flowers; }
-	
-	// Jukebox systems
-	jukebox -> { Hof; Volleyball; Crouton; Tinkle; }
-	
-	// Jukebox system planets
-	node [color=black, fillcolor="/rdylbu3/2", style=filled];
-	Hof -> { "Cosa Nostra"; Maminar; Vantek; }
-	Volleyball -> { Molten; Wilson; Zeerox; }
-	Crouton -> { Caesar; }
-	Tinkle -> { Lush; Springs; Starbase; }
-	
-	// Meadows systems
-	node [color=black, fillcolor="/rdylbu3/1", style=filled];
-	meadows -> { Villain; Escape; Seer; Disco; Alient; Sting; Punctual; Effvee; Danville; Redpill; Number; }	      
-	
-	// Meadows system planets
-	node [color=black, fillcolor="/rdylbu3/2", style=filled];
-	Villain -> { Gaston; Scar; Ursula; }
-	Escape -> { Vault; }
-	Seer -> { Satra; }
-	Disco -> { Mirror; }
-	Alient -> { Lv426; Nostromo; Origae6; }
-	Sting -> { Gondorff; Hooker; Lucky Dan; }
-	Punctual -> { Cedille; Tilde; Umlaut; }
-	Effvee -> { Garibaldi; Mason Jar; Mill; }
-	Danville -> { Fedora; Owca; Perry; }
-	Redpill -> { Nebuchadnezzar; }
-	Number -> { One; }
-	
-	// Null systems
-	node [color=black, fillcolor="/rdylbu3/1", style=filled];
-	null -> { Types; Metric; Underdark; Rage; Hope; Despair; Ombey; Carib; Travel; Prefix; Politics; Abstract; Mud; }
-
-	// Null system planets
-	node [color=black, fillcolor="/rdylbu3/2", style=filled];
-	Types -> Boolean; 
-	Types -> Integer; 
-	Types -> String;
-	Metric -> { Ampere; Celsius; Gram; }
-	Underdark -> { Beholder; Drow; Illithid; }
-	Rage -> { Rouge }
-	Hope -> { Dream; Reverie; Vision }
-	Despair -> { Nightmare }
-	Ombey -> { Lola; Valisk }
-	Carib -> { Aruba }
-	Travel -> { Helicopter; Ship }
-	Prefix -> { Kilo }
-	Politics -> { Authority; Murica }
-	Abstract -> { Boogie Woogie; Persistence; Time }
-	Mud -> { Asteria }
-	
-	// Sidh systems
-	node [color=black, fillcolor="/rdylbu3/1", style=filled];
-	sidh -> { Picts; Rionnag; Acorn; }
-	
-	// Sol systems
-	sol -> { Vee; Wow; }
-	
-	// Waveform systems
-	waveform -> { Easy; }
-	
-	// Cartels
-	{ rank = same; bfmc; bikes; flight; jukebox; meadows; null; pacifica; sidh; sol; waveform; }
-
-	// Systems
-	{ rank = same; 
-		Types; Metric; Underdark; Rage; Hope; Despair; Ombey; Carib; Travel; Prefix; Politics; 
-		Abstract; Mud; Villain; Escape; Seer; Disco; Alient; Sting; Punctual; Effvee;  Danville; 
-		Redpill; Number; Gov; Fight; Enso; "The Star Galaxy"; Wyld; Rihansu; Trial; Mythic; Abyss; 
-		"Roman Empire"; Output; Flowers; Hof; Volleyball; Crouton; Tinkle; Picts; Rionnag; Acorn;
-		Vee; Wow; Easy; 	}
-	
-	// Planets
-	/*
-	{ rank = same; Boolean; Integer; String; Ampere; Celsius; Gram; Beholder; Drow; Illithid; 
-		Rouge; Dream; Reverie; Vision; Gaston; Scar; Ursula; Vault; Satra; Mirror; Lv426; 
-		Nostromo; Origae6; Gondorff; Hooker; "Lucky Dan"; Cedille; Tilde; Umlaut; Garibaldi; 
-		"Mason Jar"; Mill; Fedora; Owca; Perry; Nebuchadnezzar; One; }
-		*/
+	node [color=black, fillcolor="/rdylbu3/2", style=filled, shape=ellipse];
+	"Waveform" -> { "Pulse"; "Saw"; "Sine"; "Square"; "Triangle"; }
+	"Easy" -> { "Goto"; }
+	"Meadows" -> { "Andromeda"; "Fisticuffs"; "Goldenshoe"; "Hoolagio"; "Monticello Bay"; "Poveglia"; }
+	"Villain" -> { "Gaston"; "Scar"; "Ursula"; }
+	"Escape" -> { "Vault"; }
+	"Seer" -> { "Satra"; }
+	"Disco" -> { "Mirror"; }
+	"Alient" -> { "Lv426"; "Nostromo"; "Origae6"; }
+	"Sting" -> { "Gondorff"; "Hooker"; "Lucky Dan"; }
+	"Punctual" -> { "Cedille"; "Tilde"; "Umlaut"; }
+	"Effvee" -> { "Garibaldi"; "Mason Jar"; "Mill"; }
+	"Danville" -> { "Fedora"; "Owca"; "Perry"; }
+	"Redpill" -> { "Nebuchadnezzar"; }
+	"Number" -> { "One"; }
+	"Bfmc" -> { "Chopper"; "Church"; "Evo"; "Patch Holder"; "Ride"; "Rumble"; "Skull"; }
+	"Bikers" -> { "Clubhouse"; "Indian"; "Medic"; }
+	"Pub" -> { "Dunkle"; }
+	"Radio" -> { "Telestar"; }
+	"Strat" -> { "Mc5"; }
+	"Force" -> { "Nomad"; }
+	"Nor" -> { "Gateway"; }
+	"Whiskey" -> { "Bourbon"; "Moonshine"; }
+	"Flight" -> { "Cessna"; "Cirrus"; "Diamond"; "Paper"; "Piper"; }
+	"Gov" -> { "Faa"; }
+	"Fight" -> { "Guardian"; }
+	"Enso" -> { "Phoenix"; "Sakura"; "Zen"; }
+	"The Star Galaxy" -> { "Oudars"; }
+	"Wyld" -> { "Sierra"; }
+	"Rihansu" -> { "Romulus"; }
+	"Trial" -> { "Level"; "Memory"; }
+	"Mythic" -> { "Olympus"; }
+	"Abyss" -> { "Station"; }
+	"Roman Empire" -> { "Rome"; "Sicily"; }
+	"Outpost" -> { "Alpine"; }
+	"Flowers" -> { "Dahlia"; }
+	"Sidh" -> { "Ghlean Sidh"; "Planaid Ashrays"; "Planaid Bith"; "Planaid Selkies"; "Seelie Court"; "Sidhean"; "Unseelie Court"; }
+	"Picts" -> { "Planaid Uisce"; }
+	"Rionnag" -> { "Alba Bith"; "Alba Gu Brath"; "Alba Nuadh"; }
+	"Acorn" -> { "Drey"; "Oak"; }
+	"Bikes" -> { "Fatboy"; "New Street Glide"; "Road Glide"; "Road King"; "Ultra Limited"; }
+	"Sol" -> { "Brass"; "Castillo"; "Doris"; "Earth"; "Graveyard"; "Hunt"; "Magellan"; "Magrathea"; "Mars"; "Mercury"; "Paradise"; "Pearl"; "Phobos"; "Rhea"; "Selena"; "Silk"; "Starbase1"; "Sumatra"; "The Lattice"; "Titan"; "Venus"; }
+	"Vee" -> { "Tennica"; }
+	"Wow" -> { "Ooh"; "Whoo"; }
+	"Pacifica" -> { "D1594"; "Helix"; "Numazu"; }
+	"Jukebox" -> { "Eagles"; "Foreigner"; "Journey"; "Laboratory"; }
+	"Hof" -> { "Cosa Nostra"; "Maminar"; "Vantek"; }
+	"Volleyball" -> { "Molten"; "Wilson"; "Zeerox"; }
+	"Crouton" -> { "Caesar"; }
+	"Tinkle" -> { "Lush"; "Springs"; "Starbase"; }
+	"Null" -> { "Any"; "Isa"; "Let"; "Nil"; "None"; "Not"; "Void"; }
+	"Types" -> { "Boolean"; "Integer"; "String"; }
+	"Metric" -> { "Ampere"; "Celsius"; "Gram"; }
+	"Underdark" -> { "Beholder"; "Drow"; "Illithid"; }
+	"Rage" -> { "Rouge"; }
+	"Hope" -> { "Dream"; "Reverie"; "Vision"; }
+	"Despair" -> { "Nightmare"; }
+	"Ombey" -> { "Lola"; "Valisk"; }
+	"Carib" -> { "Aruba"; }
+	"Travel" -> { "Helicopter"; "Ship"; }
+	"Prefix" -> { "Kilo"; }
+	"Politics" -> { "Authority"; "Murica"; }
+	"Abstract" -> { "Boogie Woogie"; "Persistence"; "Time"; }
+	"Mud" -> { "Asteria"; }
 }
