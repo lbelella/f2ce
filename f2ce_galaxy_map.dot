@@ -6,14 +6,14 @@ digraph GALAXY {
 	dir = both;
 	rankdir = LR;
 	sep = .10;
-	colorscheme = rdylbu3;
+	mindist = .2;
 
 	isl [label="Interstellar\nSpace",color=black,fillcolor=black,fontcolor=white,style=filled,shape=circle];
 
-	node [color=black,fillcolor="/rdylbu3/3",fontcolor=black,style=filled,shape=invhouse];
+	node [color=black,fillcolor="/pastel18/2",fontcolor=black,style=filled,shape=invhouse];
 	isl -> { "Waveform"; "Meadows"; "Bfmc"; "Flight"; "Sidh"; "Bikes"; "Sol"; "Pacifica"; "Jukebox"; "Null"; }
 
-	node [color=black, fillcolor="/rdylbu3/1", style=filled, shape=box];
+	node [color=black, fillcolor="/pastel18/1", style=filled, shape=box];
 	Waveform -> { "Easy"; }
 	Meadows -> { "Villain"; "Escape"; "Seer"; "Disco"; "Alient"; "Sting"; "Punctual"; "Effvee"; "Danville"; "Redpill"; "Number"; }
 	Bfmc -> { "Bikers"; "Pub"; "Radio"; "Strat"; "Force"; "Nor"; "Whiskey"; }
@@ -25,7 +25,170 @@ digraph GALAXY {
 	Jukebox -> { "Hof"; "Volleyball"; "Crouton"; "Tinkle"; }
 	Null -> { "Types"; "Metric"; "Underdark"; "Rage"; "Hope"; "Despair"; "Ombey"; "Carib"; "Travel"; "Prefix"; "Politics"; "Abstract"; "Mud"; }
 
-	node [color=black, fillcolor="/rdylbu3/2", style=filled, shape=ellipse];
+	node [color=black, style=filled, shape=ellipse];
+	"Pulse" [fillcolor="/pastel18/4"];
+	"Saw" [fillcolor="/pastel18/5"];
+	"Sine" [fillcolor="/pastel18/4"];
+	"Square" [fillcolor="/pastel18/3"];
+	"Triangle" [fillcolor="/pastel18/3"];
+	"Goto" [fillcolor="/pastel18/3"];
+	"Andromeda" [fillcolor="/pastel18/4"];
+	"Fisticuffs" [fillcolor="/pastel18/6"];
+	"Goldenshoe" [fillcolor="/pastel18/5"];
+	"Hoolagio" [fillcolor="/pastel18/3"];
+	"Monticello Bay" [fillcolor="/pastel18/8"];
+	"Poveglia" [fillcolor="/pastel18/4"];
+	"Gaston" [fillcolor="/pastel18/5"];
+	"Scar" [fillcolor="/pastel18/3"];
+	"Ursula" [fillcolor="/pastel18/4"];
+	"Vault" [fillcolor="/pastel18/8"];
+	"Satra" [fillcolor="/pastel18/7"];
+	"Mirror" [fillcolor="/pastel18/3"];
+	"Lv426" [fillcolor="/pastel18/5"];
+	"Nostromo" [fillcolor="/pastel18/4"];
+	"Origae6" [fillcolor="/pastel18/3"];
+	"Gondorff" [fillcolor="/pastel18/7"];
+	"Hooker" [fillcolor="/pastel18/5"];
+	"Lucky Dan" [fillcolor="/pastel18/4"];
+	"Cedille" [fillcolor="/pastel18/4"];
+	"Tilde" [fillcolor="/pastel18/5"];
+	"Umlaut" [fillcolor="/pastel18/7"];
+	"Garibaldi" [fillcolor="/pastel18/6"];
+	"Mason Jar" [fillcolor="/pastel18/4"];
+	"Mill" [fillcolor="/pastel18/3"];
+	"Fedora" [fillcolor="/pastel18/7"];
+	"Owca" [fillcolor="/pastel18/4"];
+	"Perry" [fillcolor="/pastel18/6"];
+	"Nebuchadnezzar" [fillcolor="/pastel18/3"];
+	"One" [fillcolor="/pastel18/3"];
+	"Chopper" [fillcolor="/pastel18/3"];
+	"Church" [fillcolor="/pastel18/4"];
+	"Evo" [fillcolor="/pastel18/4"];
+	"Patch Holder" [fillcolor="/pastel18/5"];
+	"Ride" [fillcolor="/pastel18/4"];
+	"Rumble" [fillcolor="/pastel18/4"];
+	"Skull" [fillcolor="/pastel18/3"];
+	"Clubhouse" [fillcolor="/pastel18/5"];
+	"Indian" [fillcolor="/pastel18/3"];
+	"Medic" [fillcolor="/pastel18/4"];
+	"Dunkle" [fillcolor="/pastel18/3"];
+	"Telestar" [fillcolor="/pastel18/3"];
+	"Mc5" [fillcolor="/pastel18/3"];
+	"Nomad" [fillcolor="/pastel18/3"];
+	"Gateway" [fillcolor="/pastel18/3"];
+	"Bourbon" [fillcolor="/pastel18/3"];
+	"Moonshine" [fillcolor="/pastel18/8"];
+	"Cessna" [fillcolor="/pastel18/5"];
+	"Cirrus" [fillcolor="/pastel18/3"];
+	"Diamond" [fillcolor="/pastel18/4"];
+	"Paper" [fillcolor="/pastel18/4"];
+	"Piper" [fillcolor="/pastel18/3"];
+	"Faa" [fillcolor="/pastel18/7"];
+	"Guardian" [fillcolor="/pastel18/3"];
+	"Phoenix" [fillcolor="/pastel18/3"];
+	"Sakura" [fillcolor="/pastel18/5"];
+	"Zen" [fillcolor="/pastel18/4"];
+	"Oudars" [fillcolor="/pastel18/3"];
+	"Sierra" [fillcolor="/pastel18/8"];
+	"Romulus" [fillcolor="/pastel18/3"];
+	"Level" [fillcolor="/pastel18/3"];
+	"Memory" [fillcolor="/pastel18/8"];
+	"Olympus" [fillcolor="/pastel18/3"];
+	"Station" [fillcolor="/pastel18/3"];
+	"Rome" [fillcolor="/pastel18/8"];
+	"Sicily" [fillcolor="/pastel18/3"];
+	"Alpine" [fillcolor="/pastel18/3"];
+	"Dahlia" [fillcolor="/pastel18/3"];
+	"Ghlean Sidh" [fillcolor="/pastel18/3"];
+	"Planaid Ashrays" [fillcolor="/pastel18/4"];
+	"Planaid Bith" [fillcolor="/pastel18/4"];
+	"Planaid Selkies" [fillcolor="/pastel18/4"];
+	"Seelie Court" [fillcolor="/pastel18/3"];
+	"Sidhean" [fillcolor="/pastel18/5"];
+	"Unseelie Court" [fillcolor="/pastel18/3"];
+	"Planaid Uisce" [fillcolor="/pastel18/3"];
+	"Alba Bith" [fillcolor="/pastel18/4"];
+	"Alba Gu Brath" [fillcolor="/pastel18/7"];
+	"Alba Nuadh" [fillcolor="/pastel18/5"];
+	"Drey" [fillcolor="/pastel18/3"];
+	"Oak" [fillcolor="/pastel18/8"];
+	"Fatboy" [fillcolor="/pastel18/3"];
+	"New Street Glide" [fillcolor="/pastel18/5"];
+	"Road Glide" [fillcolor="/pastel18/3"];
+	"Road King" [fillcolor="/pastel18/4"];
+	"Ultra Limited" [fillcolor="/pastel18/4"];
+	"Brass" [fillcolor="/pastel18/8"];
+	"Castillo" [fillcolor="/pastel18/6"];
+	"Doris" [fillcolor="/pastel18/4"];
+	"Earth" [fillcolor="/pastel18/7"];
+	"Magellan" [fillcolor="/pastel18/5"];
+	"Mars" [fillcolor="/pastel18/6"];
+	"Mercury" [fillcolor="/pastel18/5"];
+	"Paradise" [fillcolor="/pastel18/8"];
+	"Pearl" [fillcolor="/pastel18/6"];
+	"Phobos" [fillcolor="/pastel18/4"];
+	"Rhea" [fillcolor="/pastel18/3"];
+	"Selena" [fillcolor="/pastel18/8"];
+	"Silk" [fillcolor="/pastel18/6"];
+	"Sumatra" [fillcolor="/pastel18/7"];
+	"The Lattice" [fillcolor="/pastel18/5"];
+	"Titan" [fillcolor="/pastel18/7"];
+	"Venus" [fillcolor="/pastel18/8"];
+	"Tennica" [fillcolor="/pastel18/3"];
+	"Ooh" [fillcolor="/pastel18/3"];
+	"Whoo" [fillcolor="/pastel18/8"];
+	"D1594" [fillcolor="/pastel18/4"];
+	"Helix" [fillcolor="/pastel18/8"];
+	"Numazu" [fillcolor="/pastel18/5"];
+	"Eagles" [fillcolor="/pastel18/3"];
+	"Foreigner" [fillcolor="/pastel18/5"];
+	"Journey" [fillcolor="/pastel18/7"];
+	"Laboratory" [fillcolor="/pastel18/4"];
+	"Cosa Nostra" [fillcolor="/pastel18/4"];
+	"Maminar" [fillcolor="/pastel18/7"];
+	"Vantek" [fillcolor="/pastel18/6"];
+	"Molten" [fillcolor="/pastel18/4"];
+	"Wilson" [fillcolor="/pastel18/6"];
+	"Zeerox" [fillcolor="/pastel18/3"];
+	"Caesar" [fillcolor="/pastel18/3"];
+	"Lush" [fillcolor="/pastel18/3"];
+	"Springs" [fillcolor="/pastel18/4"];
+	"Starbase" [fillcolor="/pastel18/5"];
+	"Any" [fillcolor="/pastel18/5"];
+	"Isa" [fillcolor="/pastel18/5"];
+	"Let" [fillcolor="/pastel18/4"];
+	"Nil" [fillcolor="/pastel18/4"];
+	"None" [fillcolor="/pastel18/5"];
+	"Not" [fillcolor="/pastel18/4"];
+	"Void" [fillcolor="/pastel18/5"];
+	"Boolean" [fillcolor="/pastel18/4"];
+	"Integer" [fillcolor="/pastel18/3"];
+	"String" [fillcolor="/pastel18/5"];
+	"Ampere" [fillcolor="/pastel18/4"];
+	"Celsius" [fillcolor="/pastel18/3"];
+	"Gram" [fillcolor="/pastel18/5"];
+	"Beholder" [fillcolor="/pastel18/5"];
+	"Drow" [fillcolor="/pastel18/4"];
+	"Illithid" [fillcolor="/pastel18/3"];
+	"Rouge" [fillcolor="/pastel18/3"];
+	"Dream" [fillcolor="/pastel18/6"];
+	"Reverie" [fillcolor="/pastel18/4"];
+	"Vision" [fillcolor="/pastel18/3"];
+	"Nightmare" [fillcolor="/pastel18/7"];
+	"Lola" [fillcolor="/pastel18/3"];
+	"Valisk" [fillcolor="/pastel18/8"];
+	"Aruba" [fillcolor="/pastel18/7"];
+	"Helicopter" [fillcolor="/pastel18/7"];
+	"Ship" [fillcolor="/pastel18/6"];
+	"Kilo" [fillcolor="/pastel18/3"];
+	"Authority" [fillcolor="/pastel18/3"];
+	"Murica" [fillcolor="/pastel18/6"];
+	"Boogie Woogie" [fillcolor="/pastel18/6"];
+	"Persistence" [fillcolor="/pastel18/3"];
+	"Time" [fillcolor="/pastel18/4"];
+	"Asteria" [fillcolor="/pastel18/7"];
+
+
 	"Waveform" -> { "Pulse"; "Saw"; "Sine"; "Square"; "Triangle"; }
 	"Easy" -> { "Goto"; }
 	"Meadows" -> { "Andromeda"; "Fisticuffs"; "Goldenshoe"; "Hoolagio"; "Monticello Bay"; "Poveglia"; }
@@ -66,7 +229,7 @@ digraph GALAXY {
 	"Rionnag" -> { "Alba Bith"; "Alba Gu Brath"; "Alba Nuadh"; }
 	"Acorn" -> { "Drey"; "Oak"; }
 	"Bikes" -> { "Fatboy"; "New Street Glide"; "Road Glide"; "Road King"; "Ultra Limited"; }
-	"Sol" -> { "Brass"; "Castillo"; "Doris"; "Earth"; "Graveyard"; "Hunt"; "Magellan"; "Magrathea"; "Mars"; "Mercury"; "Paradise"; "Pearl"; "Phobos"; "Rhea"; "Selena"; "Silk"; "Starbase1"; "Sumatra"; "The Lattice"; "Titan"; "Venus"; }
+	"Sol" -> { "Brass"; "Castillo"; "Doris"; "Earth"; "Magellan"; "Mars"; "Mercury"; "Paradise"; "Pearl"; "Phobos"; "Rhea"; "Selena"; "Silk"; "Sumatra"; "The Lattice"; "Titan"; "Venus"; }
 	"Vee" -> { "Tennica"; }
 	"Wow" -> { "Ooh"; "Whoo"; }
 	"Pacifica" -> { "D1594"; "Helix"; "Numazu"; }
@@ -89,4 +252,8 @@ digraph GALAXY {
 	"Politics" -> { "Authority"; "Murica"; }
 	"Abstract" -> { "Boogie Woogie"; "Persistence"; "Time"; }
 	"Mud" -> { "Asteria"; }
+	subgraph {
+		node [color=black,fontcolor=black,style=invis];
+		Cartel [fillcolor="/pastel18/2",shape=invhouse];
+	}
 }
