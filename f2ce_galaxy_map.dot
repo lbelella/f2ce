@@ -6,14 +6,16 @@ digraph GALAXY {
 	dir = both;
 	rankdir = LR;
 	sep = .10;
+	labelloc = "t";
+	label = "Federation 2 Community Edition Galaxy Map";
 	mindist = .2;
 
 	isl [label="Interstellar\nSpace",color=black,fillcolor=black,fontcolor=white,style=filled,shape=circle];
 
-	node [color=black,fillcolor="/pastel18/2",fontcolor=black,style=filled,shape=invhouse];
+	node [color=black,fillcolor= "/set38/5",fontcolor=black,style=filled,shape=invhouse];
 	isl -> { "Waveform"; "Meadows"; "Bfmc"; "Flight"; "Sidh"; "Bikes"; "Sol"; "Pacifica"; "Jukebox"; "Null"; }
 
-	node [color=black, fillcolor="/pastel18/1", style=filled, shape=box];
+	node [color=black,fillcolor= "/set38/4", style=filled, shape=box];
 	Waveform -> { "Easy"; }
 	Meadows -> { "Villain"; "Escape"; "Seer"; "Disco"; "Alient"; "Sting"; "Punctual"; "Effvee"; "Danville"; "Redpill"; "Number"; }
 	Bfmc -> { "Bikers"; "Pub"; "Radio"; "Strat"; "Force"; "Nor"; "Whiskey"; }
@@ -26,234 +28,246 @@ digraph GALAXY {
 	Null -> { "Types"; "Metric"; "Underdark"; "Rage"; "Hope"; "Despair"; "Ombey"; "Carib"; "Travel"; "Prefix"; "Politics"; "Abstract"; "Mud"; }
 
 	node [color=black, style=filled, shape=ellipse];
-	"Pulse" [fillcolor="/pastel18/4"];
-	"Saw" [fillcolor="/pastel18/5"];
-	"Sine" [fillcolor="/pastel18/4"];
-	"Square" [fillcolor="/pastel18/3"];
-	"Triangle" [fillcolor="/pastel18/3"];
-	"Goto" [fillcolor="/pastel18/3"];
-	"Andromeda" [fillcolor="/pastel18/4"];
-	"Fisticuffs" [fillcolor="/pastel18/6"];
-	"Goldenshoe" [fillcolor="/pastel18/5"];
-	"Hoolagio" [fillcolor="/pastel18/3"];
-	"Monticello Bay" [fillcolor="/pastel18/8"];
-	"Poveglia" [fillcolor="/pastel18/4"];
-	"Gaston" [fillcolor="/pastel18/5"];
-	"Scar" [fillcolor="/pastel18/3"];
-	"Ursula" [fillcolor="/pastel18/4"];
-	"Vault" [fillcolor="/pastel18/8"];
-	"Satra" [fillcolor="/pastel18/7"];
-	"Mirror" [fillcolor="/pastel18/3"];
-	"Lv426" [fillcolor="/pastel18/5"];
-	"Nostromo" [fillcolor="/pastel18/4"];
-	"Origae6" [fillcolor="/pastel18/3"];
-	"Gondorff" [fillcolor="/pastel18/7"];
-	"Hooker" [fillcolor="/pastel18/5"];
-	"Lucky Dan" [fillcolor="/pastel18/4"];
-	"Cedille" [fillcolor="/pastel18/4"];
-	"Tilde" [fillcolor="/pastel18/5"];
-	"Umlaut" [fillcolor="/pastel18/7"];
-	"Garibaldi" [fillcolor="/pastel18/6"];
-	"Mason Jar" [fillcolor="/pastel18/4"];
-	"Mill" [fillcolor="/pastel18/3"];
-	"Fedora" [fillcolor="/pastel18/7"];
-	"Owca" [fillcolor="/pastel18/4"];
-	"Perry" [fillcolor="/pastel18/6"];
-	"Nebuchadnezzar" [fillcolor="/pastel18/3"];
-	"One" [fillcolor="/pastel18/3"];
-	"Chopper" [fillcolor="/pastel18/3"];
-	"Church" [fillcolor="/pastel18/4"];
-	"Evo" [fillcolor="/pastel18/4"];
-	"Patch Holder" [fillcolor="/pastel18/5"];
-	"Ride" [fillcolor="/pastel18/4"];
-	"Rumble" [fillcolor="/pastel18/4"];
-	"Skull" [fillcolor="/pastel18/3"];
-	"Clubhouse" [fillcolor="/pastel18/5"];
-	"Indian" [fillcolor="/pastel18/3"];
-	"Medic" [fillcolor="/pastel18/4"];
-	"Dunkle" [fillcolor="/pastel18/3"];
-	"Telestar" [fillcolor="/pastel18/3"];
-	"Mc5" [fillcolor="/pastel18/3"];
-	"Nomad" [fillcolor="/pastel18/3"];
-	"Gateway" [fillcolor="/pastel18/3"];
-	"Bourbon" [fillcolor="/pastel18/3"];
-	"Moonshine" [fillcolor="/pastel18/8"];
-	"Cessna" [fillcolor="/pastel18/5"];
-	"Cirrus" [fillcolor="/pastel18/3"];
-	"Diamond" [fillcolor="/pastel18/4"];
-	"Paper" [fillcolor="/pastel18/4"];
-	"Piper" [fillcolor="/pastel18/3"];
-	"Faa" [fillcolor="/pastel18/7"];
-	"Guardian" [fillcolor="/pastel18/3"];
-	"Phoenix" [fillcolor="/pastel18/3"];
-	"Sakura" [fillcolor="/pastel18/5"];
-	"Zen" [fillcolor="/pastel18/4"];
-	"Oudars" [fillcolor="/pastel18/3"];
-	"Sierra" [fillcolor="/pastel18/8"];
-	"Romulus" [fillcolor="/pastel18/3"];
-	"Level" [fillcolor="/pastel18/3"];
-	"Memory" [fillcolor="/pastel18/8"];
-	"Olympus" [fillcolor="/pastel18/3"];
-	"Station" [fillcolor="/pastel18/3"];
-	"Rome" [fillcolor="/pastel18/8"];
-	"Sicily" [fillcolor="/pastel18/3"];
-	"Alpine" [fillcolor="/pastel18/3"];
-	"Dahlia" [fillcolor="/pastel18/3"];
-	"Ghlean Sidh" [fillcolor="/pastel18/3"];
-	"Planaid Ashrays" [fillcolor="/pastel18/4"];
-	"Planaid Bith" [fillcolor="/pastel18/4"];
-	"Planaid Selkies" [fillcolor="/pastel18/4"];
-	"Seelie Court" [fillcolor="/pastel18/3"];
-	"Sidhean" [fillcolor="/pastel18/5"];
-	"Unseelie Court" [fillcolor="/pastel18/3"];
-	"Planaid Uisce" [fillcolor="/pastel18/3"];
-	"Alba Bith" [fillcolor="/pastel18/4"];
-	"Alba Gu Brath" [fillcolor="/pastel18/7"];
-	"Alba Nuadh" [fillcolor="/pastel18/5"];
-	"Drey" [fillcolor="/pastel18/3"];
-	"Oak" [fillcolor="/pastel18/8"];
-	"Fatboy" [fillcolor="/pastel18/3"];
-	"New Street Glide" [fillcolor="/pastel18/5"];
-	"Road Glide" [fillcolor="/pastel18/3"];
-	"Road King" [fillcolor="/pastel18/4"];
-	"Ultra Limited" [fillcolor="/pastel18/4"];
-	"Brass" [fillcolor="/pastel18/8"];
-	"Castillo" [fillcolor="/pastel18/6"];
-	"Doris" [fillcolor="/pastel18/4"];
-	"Earth" [fillcolor="/pastel18/7"];
-	"Magellan" [fillcolor="/pastel18/5"];
-	"Mars" [fillcolor="/pastel18/6"];
-	"Mercury" [fillcolor="/pastel18/5"];
-	"Paradise" [fillcolor="/pastel18/8"];
-	"Pearl" [fillcolor="/pastel18/6"];
-	"Phobos" [fillcolor="/pastel18/4"];
-	"Rhea" [fillcolor="/pastel18/3"];
-	"Selena" [fillcolor="/pastel18/8"];
-	"Silk" [fillcolor="/pastel18/6"];
-	"Sumatra" [fillcolor="/pastel18/7"];
-	"The Lattice" [fillcolor="/pastel18/5"];
-	"Titan" [fillcolor="/pastel18/7"];
-	"Venus" [fillcolor="/pastel18/8"];
-	"Tennica" [fillcolor="/pastel18/3"];
-	"Ooh" [fillcolor="/pastel18/3"];
-	"Whoo" [fillcolor="/pastel18/8"];
-	"D1594" [fillcolor="/pastel18/4"];
-	"Helix" [fillcolor="/pastel18/8"];
-	"Numazu" [fillcolor="/pastel18/5"];
-	"Eagles" [fillcolor="/pastel18/3"];
-	"Foreigner" [fillcolor="/pastel18/5"];
-	"Journey" [fillcolor="/pastel18/7"];
-	"Laboratory" [fillcolor="/pastel18/4"];
-	"Cosa Nostra" [fillcolor="/pastel18/4"];
-	"Maminar" [fillcolor="/pastel18/7"];
-	"Vantek" [fillcolor="/pastel18/6"];
-	"Molten" [fillcolor="/pastel18/4"];
-	"Wilson" [fillcolor="/pastel18/6"];
-	"Zeerox" [fillcolor="/pastel18/3"];
-	"Caesar" [fillcolor="/pastel18/3"];
-	"Lush" [fillcolor="/pastel18/3"];
-	"Springs" [fillcolor="/pastel18/4"];
-	"Starbase" [fillcolor="/pastel18/5"];
-	"Any" [fillcolor="/pastel18/5"];
-	"Isa" [fillcolor="/pastel18/5"];
-	"Let" [fillcolor="/pastel18/4"];
-	"Nil" [fillcolor="/pastel18/4"];
-	"None" [fillcolor="/pastel18/5"];
-	"Not" [fillcolor="/pastel18/4"];
-	"Void" [fillcolor="/pastel18/5"];
-	"Boolean" [fillcolor="/pastel18/4"];
-	"Integer" [fillcolor="/pastel18/3"];
-	"String" [fillcolor="/pastel18/5"];
-	"Ampere" [fillcolor="/pastel18/4"];
-	"Celsius" [fillcolor="/pastel18/3"];
-	"Gram" [fillcolor="/pastel18/5"];
-	"Beholder" [fillcolor="/pastel18/5"];
-	"Drow" [fillcolor="/pastel18/4"];
-	"Illithid" [fillcolor="/pastel18/3"];
-	"Rouge" [fillcolor="/pastel18/3"];
-	"Dream" [fillcolor="/pastel18/6"];
-	"Reverie" [fillcolor="/pastel18/4"];
-	"Vision" [fillcolor="/pastel18/3"];
-	"Nightmare" [fillcolor="/pastel18/7"];
-	"Lola" [fillcolor="/pastel18/3"];
-	"Valisk" [fillcolor="/pastel18/8"];
-	"Aruba" [fillcolor="/pastel18/7"];
-	"Helicopter" [fillcolor="/pastel18/7"];
-	"Ship" [fillcolor="/pastel18/6"];
-	"Kilo" [fillcolor="/pastel18/3"];
-	"Authority" [fillcolor="/pastel18/3"];
-	"Murica" [fillcolor="/pastel18/6"];
-	"Boogie Woogie" [fillcolor="/pastel18/6"];
-	"Persistence" [fillcolor="/pastel18/3"];
-	"Time" [fillcolor="/pastel18/4"];
-	"Asteria" [fillcolor="/pastel18/7"];
+	"Pulse" [fillcolor="/set38/1"];
+	"Saw" [fillcolor="/set38/8"];
+	"Sine" [fillcolor="/set38/1"];
+	"Square" [fillcolor="/set38/7"];
+	"Triangle" [fillcolor="/set38/7"];
+	"Goto" [fillcolor="/set38/7"];
+	"Andromeda" [fillcolor="/set38/1"];
+	"Fisticuffs" [fillcolor="/set38/6"];
+	"Goldenshoe" [fillcolor="/set38/8"];
+	"Hoolagio" [fillcolor="/set38/7"];
+	"Monticello Bay" [fillcolor="/set38/3"];
+	"Poveglia" [fillcolor="/set38/1"];
+	"Gaston" [fillcolor="/set38/8"];
+	"Scar" [fillcolor="/set38/7"];
+	"Ursula" [fillcolor="/set38/1"];
+	"Vault" [fillcolor="/set38/3"];
+	"Satra" [fillcolor="/set38/2"];
+	"Mirror" [fillcolor="/set38/7"];
+	"Lv426" [fillcolor="/set38/8"];
+	"Nostromo" [fillcolor="/set38/1"];
+	"Origae6" [fillcolor="/set38/7"];
+	"Gondorff" [fillcolor="/set38/2"];
+	"Hooker" [fillcolor="/set38/8"];
+	"Lucky Dan" [fillcolor="/set38/1"];
+	"Cedille" [fillcolor="/set38/1"];
+	"Tilde" [fillcolor="/set38/8"];
+	"Umlaut" [fillcolor="/set38/2"];
+	"Garibaldi" [fillcolor="/set38/6"];
+	"Mason Jar" [fillcolor="/set38/1"];
+	"Mill" [fillcolor="/set38/7"];
+	"Fedora" [fillcolor="/set38/2"];
+	"Owca" [fillcolor="/set38/1"];
+	"Perry" [fillcolor="/set38/6"];
+	"Nebuchadnezzar" [fillcolor="/set38/7"];
+	"One" [fillcolor="/set38/7"];
+	"Chopper" [fillcolor="/set38/7"];
+	"Church" [fillcolor="/set38/1"];
+	"Evo" [fillcolor="/set38/1"];
+	"Patch Holder" [fillcolor="/set38/8"];
+	"Ride" [fillcolor="/set38/1"];
+	"Rumble" [fillcolor="/set38/1"];
+	"Skull" [fillcolor="/set38/7"];
+	"Clubhouse" [fillcolor="/set38/8"];
+	"Indian" [fillcolor="/set38/7"];
+	"Medic" [fillcolor="/set38/1"];
+	"Dunkle" [fillcolor="/set38/7"];
+	"Telestar" [fillcolor="/set38/7"];
+	"Mc5" [fillcolor="/set38/7"];
+	"Nomad" [fillcolor="/set38/7"];
+	"Gateway" [fillcolor="/set38/7"];
+	"Bourbon" [fillcolor="/set38/7"];
+	"Moonshine" [fillcolor="/set38/3"];
+	"Cessna" [fillcolor="/set38/8"];
+	"Cirrus" [fillcolor="/set38/7"];
+	"Diamond" [fillcolor="/set38/1"];
+	"Paper" [fillcolor="/set38/1"];
+	"Piper" [fillcolor="/set38/7"];
+	"Faa" [fillcolor="/set38/2"];
+	"Guardian" [fillcolor="/set38/7"];
+	"Phoenix" [fillcolor="/set38/7"];
+	"Sakura" [fillcolor="/set38/8"];
+	"Zen" [fillcolor="/set38/1"];
+	"Oudars" [fillcolor="/set38/7"];
+	"Cascadia" [fillcolor="/set38/7"];
+	"Sierra" [fillcolor="/set38/3"];
+	"Romulus" [fillcolor="/set38/7"];
+	"Level" [fillcolor="/set38/7"];
+	"Memory" [fillcolor="/set38/3"];
+	"Olympus" [fillcolor="/set38/7"];
+	"Station" [fillcolor="/set38/7"];
+	"Rome" [fillcolor="/set38/3"];
+	"Sicily" [fillcolor="/set38/7"];
+	"Alpine" [fillcolor="/set38/7"];
+	"Dahlia" [fillcolor="/set38/7"];
+	"Ghlean Sidh" [fillcolor="/set38/7"];
+	"Planaid Ashrays" [fillcolor="/set38/1"];
+	"Planaid Bith" [fillcolor="/set38/1"];
+	"Planaid Selkies" [fillcolor="/set38/1"];
+	"Seelie Court" [fillcolor="/set38/7"];
+	"Sidhean" [fillcolor="/set38/8"];
+	"Unseelie Court" [fillcolor="/set38/7"];
+	"Planaid Uisce" [fillcolor="/set38/7"];
+	"Alba Bith" [fillcolor="/set38/1"];
+	"Alba Gu Brath" [fillcolor="/set38/2"];
+	"Alba Nuadh" [fillcolor="/set38/8"];
+	"Drey" [fillcolor="/set38/7"];
+	"Oak" [fillcolor="/set38/3"];
+	"Fatboy" [fillcolor="/set38/7"];
+	"New Street Glide" [fillcolor="/set38/8"];
+	"Road Glide" [fillcolor="/set38/7"];
+	"Road King" [fillcolor="/set38/1"];
+	"Ultra Limited" [fillcolor="/set38/1"];
+	"Brass" [fillcolor="/set38/3"];
+	"Castillo" [fillcolor="/set38/6"];
+	"Doris" [fillcolor="/set38/1"];
+	"Earth" [fillcolor="/set38/2"];
+	"Magellan" [fillcolor="/set38/8"];
+	"Mars" [fillcolor="/set38/6"];
+	"Mercury" [fillcolor="/set38/8"];
+	"Paradise" [fillcolor="/set38/3"];
+	"Pearl" [fillcolor="/set38/6"];
+	"Phobos" [fillcolor="/set38/1"];
+	"Rhea" [fillcolor="/set38/7"];
+	"Selena" [fillcolor="/set38/3"];
+	"Silk" [fillcolor="/set38/6"];
+	"Sumatra" [fillcolor="/set38/2"];
+	"The Lattice" [fillcolor="/set38/8"];
+	"Titan" [fillcolor="/set38/2"];
+	"Venus" [fillcolor="/set38/3"];
+	"Tennica" [fillcolor="/set38/7"];
+	"Ooh" [fillcolor="/set38/7"];
+	"Whoo" [fillcolor="/set38/3"];
+	"D1594" [fillcolor="/set38/1"];
+	"Helix" [fillcolor="/set38/3"];
+	"Numazu" [fillcolor="/set38/8"];
+	"Eagles" [fillcolor="/set38/7"];
+	"Foreigner" [fillcolor="/set38/8"];
+	"Journey" [fillcolor="/set38/2"];
+	"Laboratory" [fillcolor="/set38/1"];
+	"Cosa Nostra" [fillcolor="/set38/1"];
+	"Maminar" [fillcolor="/set38/2"];
+	"Vantek" [fillcolor="/set38/6"];
+	"Molten" [fillcolor="/set38/1"];
+	"Wilson" [fillcolor="/set38/6"];
+	"Zeerox" [fillcolor="/set38/7"];
+	"Caesar" [fillcolor="/set38/7"];
+	"Lush" [fillcolor="/set38/7"];
+	"Springs" [fillcolor="/set38/1"];
+	"Starbase" [fillcolor="/set38/8"];
+	"Any" [fillcolor="/set38/8"];
+	"Isa" [fillcolor="/set38/8"];
+	"Let" [fillcolor="/set38/1"];
+	"Nil" [fillcolor="/set38/1"];
+	"None" [fillcolor="/set38/8"];
+	"Not" [fillcolor="/set38/1"];
+	"Void" [fillcolor="/set38/8"];
+	"Boolean" [fillcolor="/set38/1"];
+	"Integer" [fillcolor="/set38/7"];
+	"String" [fillcolor="/set38/8"];
+	"Ampere" [fillcolor="/set38/1"];
+	"Celsius" [fillcolor="/set38/7"];
+	"Gram" [fillcolor="/set38/8"];
+	"Beholder" [fillcolor="/set38/8"];
+	"Drow" [fillcolor="/set38/1"];
+	"Illithid" [fillcolor="/set38/7"];
+	"Rouge" [fillcolor="/set38/7"];
+	"Dream" [fillcolor="/set38/6"];
+	"Reverie" [fillcolor="/set38/1"];
+	"Vision" [fillcolor="/set38/7"];
+	"Nightmare" [fillcolor="/set38/2"];
+	"Lola" [fillcolor="/set38/7"];
+	"Valisk" [fillcolor="/set38/3"];
+	"Aruba" [fillcolor="/set38/2"];
+	"Helicopter" [fillcolor="/set38/2"];
+	"Ship" [fillcolor="/set38/6"];
+	"Kilo" [fillcolor="/set38/7"];
+	"Authority" [fillcolor="/set38/7"];
+	"Murica" [fillcolor="/set38/6"];
+	"Boogie Woogie" [fillcolor="/set38/6"];
+	"Persistence" [fillcolor="/set38/7"];
+	"Time" [fillcolor="/set38/1"];
+	"Asteria" [fillcolor="/set38/2"];
 
 
-	"Waveform" -> { "Pulse"; "Saw"; "Sine"; "Square"; "Triangle"; }
-	"Easy" -> { "Goto"; }
-	"Meadows" -> { "Andromeda"; "Fisticuffs"; "Goldenshoe"; "Hoolagio"; "Monticello Bay"; "Poveglia"; }
-	"Villain" -> { "Gaston"; "Scar"; "Ursula"; }
-	"Escape" -> { "Vault"; }
-	"Seer" -> { "Satra"; }
-	"Disco" -> { "Mirror"; }
-	"Alient" -> { "Lv426"; "Nostromo"; "Origae6"; }
-	"Sting" -> { "Gondorff"; "Hooker"; "Lucky Dan"; }
-	"Punctual" -> { "Cedille"; "Tilde"; "Umlaut"; }
-	"Effvee" -> { "Garibaldi"; "Mason Jar"; "Mill"; }
-	"Danville" -> { "Fedora"; "Owca"; "Perry"; }
-	"Redpill" -> { "Nebuchadnezzar"; }
-	"Number" -> { "One"; }
-	"Bfmc" -> { "Chopper"; "Church"; "Evo"; "Patch Holder"; "Ride"; "Rumble"; "Skull"; }
-	"Bikers" -> { "Clubhouse"; "Indian"; "Medic"; }
-	"Pub" -> { "Dunkle"; }
-	"Radio" -> { "Telestar"; }
-	"Strat" -> { "Mc5"; }
-	"Force" -> { "Nomad"; }
-	"Nor" -> { "Gateway"; }
-	"Whiskey" -> { "Bourbon"; "Moonshine"; }
-	"Flight" -> { "Cessna"; "Cirrus"; "Diamond"; "Paper"; "Piper"; }
-	"Gov" -> { "Faa"; }
-	"Fight" -> { "Guardian"; }
-	"Enso" -> { "Phoenix"; "Sakura"; "Zen"; }
-	"The Star Galaxy" -> { "Oudars"; }
-	"Wyld" -> { "Sierra"; }
-	"Rihansu" -> { "Romulus"; }
-	"Trial" -> { "Level"; "Memory"; }
-	"Mythic" -> { "Olympus"; }
-	"Abyss" -> { "Station"; }
-	"Roman Empire" -> { "Rome"; "Sicily"; }
-	"Outpost" -> { "Alpine"; }
-	"Flowers" -> { "Dahlia"; }
-	"Sidh" -> { "Ghlean Sidh"; "Planaid Ashrays"; "Planaid Bith"; "Planaid Selkies"; "Seelie Court"; "Sidhean"; "Unseelie Court"; }
-	"Picts" -> { "Planaid Uisce"; }
-	"Rionnag" -> { "Alba Bith"; "Alba Gu Brath"; "Alba Nuadh"; }
-	"Acorn" -> { "Drey"; "Oak"; }
-	"Bikes" -> { "Fatboy"; "New Street Glide"; "Road Glide"; "Road King"; "Ultra Limited"; }
-	"Sol" -> { "Brass"; "Castillo"; "Doris"; "Earth"; "Magellan"; "Mars"; "Mercury"; "Paradise"; "Pearl"; "Phobos"; "Rhea"; "Selena"; "Silk"; "Sumatra"; "The Lattice"; "Titan"; "Venus"; }
-	"Vee" -> { "Tennica"; }
-	"Wow" -> { "Ooh"; "Whoo"; }
-	"Pacifica" -> { "D1594"; "Helix"; "Numazu"; }
-	"Jukebox" -> { "Eagles"; "Foreigner"; "Journey"; "Laboratory"; }
-	"Hof" -> { "Cosa Nostra"; "Maminar"; "Vantek"; }
-	"Volleyball" -> { "Molten"; "Wilson"; "Zeerox"; }
-	"Crouton" -> { "Caesar"; }
-	"Tinkle" -> { "Lush"; "Springs"; "Starbase"; }
-	"Null" -> { "Any"; "Isa"; "Let"; "Nil"; "None"; "Not"; "Void"; }
-	"Types" -> { "Boolean"; "Integer"; "String"; }
-	"Metric" -> { "Ampere"; "Celsius"; "Gram"; }
-	"Underdark" -> { "Beholder"; "Drow"; "Illithid"; }
-	"Rage" -> { "Rouge"; }
-	"Hope" -> { "Dream"; "Reverie"; "Vision"; }
-	"Despair" -> { "Nightmare"; }
-	"Ombey" -> { "Lola"; "Valisk"; }
-	"Carib" -> { "Aruba"; }
-	"Travel" -> { "Helicopter"; "Ship"; }
-	"Prefix" -> { "Kilo"; }
-	"Politics" -> { "Authority"; "Murica"; }
-	"Abstract" -> { "Boogie Woogie"; "Persistence"; "Time"; }
-	"Mud" -> { "Asteria"; }
-	subgraph {
-		node [color=black,fontcolor=black,style=invis];
-		Cartel [fillcolor="/pastel18/2",shape=invhouse];
-	}
+	"Waveform" -> "Pulse" -> "Saw" -> "Sine" -> "Square" -> "Triangle";
+	"Easy" -> "Goto";
+	"Meadows" -> "Andromeda" -> "Fisticuffs" -> "Goldenshoe" -> "Hoolagio" -> "Monticello Bay" -> "Poveglia";
+	"Villain" -> "Gaston" -> "Scar" -> "Ursula";
+	"Escape" -> "Vault";
+	"Seer" -> "Satra";
+	"Disco" -> "Mirror";
+	"Alient" -> "Lv426" -> "Nostromo" -> "Origae6";
+	"Sting" -> "Gondorff" -> "Hooker" -> "Lucky Dan";
+	"Punctual" -> "Cedille" -> "Tilde" -> "Umlaut";
+	"Effvee" -> "Garibaldi" -> "Mason Jar" -> "Mill";
+	"Danville" -> "Fedora" -> "Owca" -> "Perry";
+	"Redpill" -> "Nebuchadnezzar";
+	"Number" -> "One";
+	"Bfmc" -> "Chopper" -> "Church" -> "Evo" -> "Patch Holder" -> "Ride" -> "Rumble" -> "Skull";
+	"Bikers" -> "Clubhouse" -> "Indian" -> "Medic";
+	"Pub" -> "Dunkle";
+	"Radio" -> "Telestar";
+	"Strat" -> "Mc5";
+	"Force" -> "Nomad";
+	"Nor" -> "Gateway";
+	"Whiskey" -> "Bourbon" -> "Moonshine";
+	"Flight" -> "Cessna" -> "Cirrus" -> "Diamond" -> "Paper" -> "Piper";
+	"Gov" -> "Faa";
+	"Fight" -> "Guardian";
+	"Enso" -> "Phoenix" -> "Sakura" -> "Zen";
+	"The Star Galaxy" -> "Oudars";
+	"Wyld" -> "Cascadia" -> "Sierra";
+	"Rihansu" -> "Romulus";
+	"Trial" -> "Level" -> "Memory";
+	"Mythic" -> "Olympus";
+	"Abyss" -> "Station";
+	"Roman Empire" -> "Rome" -> "Sicily";
+	"Outpost" -> "Alpine";
+	"Flowers" -> "Dahlia";
+	"Sidh" -> "Ghlean Sidh" -> "Planaid Ashrays" -> "Planaid Bith" -> "Planaid Selkies" -> "Seelie Court" -> "Sidhean" -> "Unseelie Court";
+	"Picts" -> "Planaid Uisce";
+	"Rionnag" -> "Alba Bith" -> "Alba Gu Brath" -> "Alba Nuadh";
+	"Acorn" -> "Drey" -> "Oak";
+	"Bikes" -> "Fatboy" -> "New Street Glide" -> "Road Glide" -> "Road King" -> "Ultra Limited";
+	"Sol" -> "Brass" -> "Castillo" -> "Doris" -> "Earth" -> "Magellan" -> "Mars" -> "Mercury" -> "Paradise" -> "Pearl" -> "Phobos" -> "Rhea" -> "Selena" -> "Silk" -> "Sumatra" -> "The Lattice" -> "Titan" -> "Venus";
+	"Vee" -> "Tennica";
+	"Wow" -> "Ooh" -> "Whoo";
+	"Pacifica" -> "D1594" -> "Helix" -> "Numazu";
+	"Jukebox" -> "Eagles" -> "Foreigner" -> "Journey" -> "Laboratory";
+	"Hof" -> "Cosa Nostra" -> "Maminar" -> "Vantek";
+	"Volleyball" -> "Molten" -> "Wilson" -> "Zeerox";
+	"Crouton" -> "Caesar";
+	"Tinkle" -> "Lush" -> "Springs" -> "Starbase";
+	"Null" -> "Any" -> "Isa" -> "Let" -> "Nil" -> "None" -> "Not" -> "Void";
+	"Types" -> "Boolean" -> "Integer" -> "String";
+	"Metric" -> "Ampere" -> "Celsius" -> "Gram";
+	"Underdark" -> "Beholder" -> "Drow" -> "Illithid";
+	"Rage" -> "Rouge";
+	"Hope" -> "Dream" -> "Reverie" -> "Vision";
+	"Despair" -> "Nightmare";
+	"Ombey" -> "Lola" -> "Valisk";
+	"Carib" -> "Aruba";
+	"Travel" -> "Helicopter" -> "Ship";
+	"Prefix" -> "Kilo";
+	"Politics" -> "Authority" -> "Murica";
+	"Abstract" -> "Boogie Woogie" -> "Persistence" -> "Time";
+	"Mud" -> "Asteria";
+
+	subgraph cluster_legend {
+		rankdir = LR;
+		label = Legend;
+		node [color=black,fontcolor=black];
+		start [label="Empty",style=invis];
+		c [label="Cartel",fillcolor= "/set38/5",shape=invhouse];
+		s [label="System",fillcolor= "/set38/4",shape=square];
+		ap [label="Ag\nPlanet",fillcolor= "/set38/7",shape=ellipse];
+		bp [label="Bio\nPlanet",fillcolor= "/set38/1",shape=ellipse];
+		rp [label="Res\nPlanet",fillcolor= "/set38/2",shape=ellipse];
+		ip [label="Ind\nPlanet",fillcolor= "/set38/3",shape=ellipse];
+		tp [label="Tech\nPlanet",fillcolor= "/set38/6",shape=ellipse];
+		lp [label="Leisure\nPlanet",fillcolor= "/set38/8",shape=ellipse];
+		start -> c [style=invis]c -> s -> ap -> bp -> rp -> ip -> tp -> lp	}
 }
