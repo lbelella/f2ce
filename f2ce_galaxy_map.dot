@@ -5,27 +5,27 @@ digraph GALAXY {
 	overlap = false;
 	dir = both;
 	rankdir = LR;
-	sep = .10;
+	sep = .3;
 	labelloc = "t";
 	label = "Federation 2 Community Edition Galaxy Map";
-	mindist = .2;
+	mindist = .3;
 
 	isl [label="Interstellar\nSpace",color=black,fillcolor=black,fontcolor=white,style=filled,shape=circle];
 
 	node [color=black,fillcolor= "/set38/5",fontcolor=black,style=filled,shape=invhouse];
-	isl -> { "Waveform"; "Meadows"; "Bfmc"; "Flight"; "Sidh"; "Bikes"; "Sol"; "Pacifica"; "Jukebox"; "Null"; }
+	isl -> { "Bfmc"; "Bikes"; "Flight"; "Jukebox"; "Meadows"; "Null"; "Pacifica"; "Sidh"; "Sol"; "Waveform"; }
 
 	node [color=black,fillcolor= "/set38/4", style=filled, shape=box];
-	Waveform -> { "Easy"; }
-	Meadows -> { "Villain"; "Escape"; "Seer"; "Disco"; "Alient"; "Sting"; "Punctual"; "Effvee"; "Danville"; "Redpill"; "Number"; }
-	Bfmc -> { "Bikers"; "Pub"; "Radio"; "Strat"; "Force"; "Nor"; "Whiskey"; }
-	Flight -> { "Gov"; "Fight"; "Enso"; "The Star Galaxy"; "Wyld"; "Rihansu"; "Trial"; "Mythic"; "Abyss"; "Roman Empire"; "Outpost"; "Flowers"; }
-	Sidh -> { "Picts"; "Rionnag"; "Acorn"; }
+	Bfmc -> { "Bikers"; "Force"; "Nor"; "Pub"; "Radio"; "Strat"; "Whiskey"; }
 	Bikes -> { }
-	Sol -> { "Vee"; "Wow"; }
+	Flight -> { "Abyss"; "Enso"; "Fight"; "Flowers"; "Gov"; "Mythic"; "Outpost"; "Rihansu"; "Roman Empire"; "The Star Galaxy"; "Trial"; "Wyld"; }
+	Jukebox -> { "Crouton"; "Hof"; "Tinkle"; "Volleyball"; }
+	Meadows -> { "Alient"; "Danville"; "Disco"; "Effvee"; "Escape"; "Number"; "Punctual"; "Redpill"; "Seer"; "Sting"; "Villain"; }
+	Null -> { "Abstract"; "Carib"; "Despair"; "Hope"; "Metric"; "Mud"; "Ombey"; "Politics"; "Prefix"; "Rage"; "Travel"; "Types"; "Underdark"; }
 	Pacifica -> { }
-	Jukebox -> { "Hof"; "Volleyball"; "Crouton"; "Tinkle"; }
-	Null -> { "Types"; "Metric"; "Underdark"; "Rage"; "Hope"; "Despair"; "Ombey"; "Carib"; "Travel"; "Prefix"; "Politics"; "Abstract"; "Mud"; }
+	Sidh -> { "Acorn"; "Picts"; "Rionnag"; }
+	Sol -> { "Vee"; "Wow"; }
+	Waveform -> { "Easy"; }
 
 	node [color=black, style=filled, shape=ellipse];
 	"Pulse" [fillcolor="/set38/1"];
