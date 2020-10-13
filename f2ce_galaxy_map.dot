@@ -269,5 +269,5 @@ digraph GALAXY {
 		ip [label="Ind\nPlanet",fillcolor= "/set38/3",shape=ellipse];
 		tp [label="Tech\nPlanet",fillcolor= "/set38/6",shape=ellipse];
 		lp [label="Leisure\nPlanet",fillcolor= "/set38/8",shape=ellipse];
-		start -> c [style=invis]c -> s -> ap -> bp -> rp -> ip -> tp -> lp	}
+		start -> c [style=invis]c -> s -> ap -> rp -> ip -> tp -> bp -> lp	}
 }
