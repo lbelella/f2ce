@@ -24,8 +24,8 @@ digraph GALAXY {
 	Null -> { "Abstract"; "Carib"; "Despair"; "Hope"; "Metric"; "Mud"; "Ombey"; "Politics"; "Prefix"; "Rage"; "Travel"; "Types"; "Underdark"; }
 	Pacifica -> { }
 	Sidh -> { "Acorn"; "Picts"; "Rionnag"; }
-	Sol -> { "Vee"; "Wow"; }
-	Waveform -> { "Easy"; }
+	Sol -> { "Wow"; }
+	Waveform -> { "Easy"; "Vee"; }
 
 	node [color=black, style=filled, shape=ellipse];
 	"Pulse" [fillcolor="/set38/1"];
@@ -34,6 +34,7 @@ digraph GALAXY {
 	"Square" [fillcolor="/set38/7"];
 	"Triangle" [fillcolor="/set38/7"];
 	"Goto" [fillcolor="/set38/7"];
+	"Tennica" [fillcolor="/set38/7"];
 	"Andromeda" [fillcolor="/set38/1"];
 	"Fisticuffs" [fillcolor="/set38/6"];
 	"Goldenshoe" [fillcolor="/set38/8"];
@@ -137,7 +138,6 @@ digraph GALAXY {
 	"The Lattice" [fillcolor="/set38/8"];
 	"Titan" [fillcolor="/set38/2"];
 	"Venus" [fillcolor="/set38/3"];
-	"Tennica" [fillcolor="/set38/7"];
 	"Ooh" [fillcolor="/set38/7"];
 	"Whoo" [fillcolor="/set38/3"];
 	"D1594" [fillcolor="/set38/1"];
@@ -194,6 +194,7 @@ digraph GALAXY {
 
 	"Waveform" -> "Pulse" -> "Saw" -> "Sine" -> "Square" -> "Triangle";
 	"Easy" -> "Goto";
+	"Vee" -> "Tennica";
 	"Meadows" -> "Andromeda" -> "Fisticuffs" -> "Goldenshoe" -> "Hoolagio" -> "Monticello Bay" -> "Poveglia";
 	"Villain" -> "Gaston" -> "Scar" -> "Ursula";
 	"Escape" -> "Vault";
@@ -233,7 +234,6 @@ digraph GALAXY {
 	"Acorn" -> "Drey" -> "Oak";
 	"Bikes" -> "Fatboy" -> "New Street Glide" -> "Road Glide" -> "Road King" -> "Ultra Limited";
 	"Sol" -> "Brass" -> "Castillo" -> "Doris" -> "Earth" -> "Magellan" -> "Mars" -> "Mercury" -> "Paradise" -> "Pearl" -> "Phobos" -> "Rhea" -> "Selena" -> "Silk" -> "Sumatra" -> "The Lattice" -> "Titan" -> "Venus";
-	"Vee" -> "Tennica";
 	"Wow" -> "Ooh" -> "Whoo";
 	"Pacifica" -> "D1594" -> "Helix" -> "Numazu";
 	"Jukebox" -> "Eagles" -> "Foreigner" -> "Journey" -> "Laboratory";
